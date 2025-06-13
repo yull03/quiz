@@ -1,3 +1,4 @@
+import "./App.scss";
 import quizData from "./quizData/quizData";
 import Categoris from "./components/Categoris";
 import Quizpage from "./components/Quizpage";

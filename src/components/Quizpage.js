@@ -9,7 +9,7 @@ const Quizpage = ({quiz,onFinished}) => {
         // if(item === currentQuiz.correct){
         //     setScore(score+10);
         // }
-        const result=(item === currentQuiz.correct) ? score+10:score;
+        const result=(item === currentQuiz.correct) ? score+20:score;
 
         if(currentIdx+1 < quiz.length){
             //계속 실행이 되어야 하고
@@ -24,7 +24,7 @@ const Quizpage = ({quiz,onFinished}) => {
     return (
         <div className="quiz-page">
             <h2>퀴즈({currentIdx+1}/{quiz.length})</h2>
-                <p>{currentQuiz.question}</p>
+                <p style={{whiteSpace:"pre-line"}}>{currentQuiz.question}</p>
                 <div className="choises">
                     {
                     currentQuiz.choices.map((item,idx)=>{

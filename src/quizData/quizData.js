@@ -1,174 +1,217 @@
 const quizData = {
-  categories: ["저축", "투자", "대출", "보험"],
+  categories: ["HTML/CSS", "JavaScript", "웹 표준/접근성", "웹 기획/디자인", "서버/네트워크"],
   quizzes: [
-    // 저축 카테고리
+    // HTML/CSS 카테고리
     {
       id: 1,
-      category: "저축",
+      category: "HTML/CSS",
       difficulty: "쉬움",
-      question: "💬 친구 민수: \"매달 월급을 받으면 다 써버려... 나 어떻게 하지?\"\n👉 어떤 금융상품을 추천할까?",
-      choices: ["적금", "정기예금", "펀드", "대출"],
-      correct: "적금"
+      question: "💬 친구 지훈:\n \"웹 페이지 만들 때 글자 크기나 색깔 바꾸는 건 뭘로 해?\"\n👉 어떤 언어를 말하는 걸까?",
+      choices: ["HTML", "CSS", "JavaScript", "Python"],
+      correct: "CSS"
     },
     {
       id: 2,
-      category: "저축",
+      category: "HTML/CSS",
       difficulty: "보통",
-      question: "🧠 수빈이: \"이자 계산할 때 유리한 방식이 있다던데...?\"\n👉 당신의 설명은?",
-      choices: ["복리", "단리", "변동금리", "고정금리"],
-      correct: "복리"
+      question: "🧠 서연이:\n \"웹 페이지 구조를 만드는 뼈대 같은 언어가 뭐지?\"\n👉 정답은?",
+      choices: ["CSS", "JavaScript", "HTML", "SQL"],
+      correct: "HTML"
     },
     {
       id: 3,
-      category: "저축",
+      category: "HTML/CSS",
       difficulty: "어려움",
-      question: "😰 민재: \"급할 때 꺼내쓸 돈을 어디에 넣어야 할까?\"\n👉 가장 적합한 금융상품은?",
-      choices: ["수시입출금 통장", "정기예금", "펀드", "채권"],
-      correct: "수시입출금 통장"
+      question: "😰 민준:\n \"CSS에서 요소의 안쪽 여백을 조절하는 속성은?\"\n👉 어떤 속성일까?",
+      choices: ["margin", "padding", "border", "outline"],
+      correct: "padding"
     },
     {
       id: 4,
-      category: "저축",
+      category: "HTML/CSS",
       difficulty: "쉬움",
-      question: "📦 한솔: \"예금도 하고, 필요하면 대출도 받을 수 있는 통장이 있대! 그게 뭐였더라?\"",
-      choices: ["마이너스 통장", "적립식 펀드", "통장 정기예금", "정기 적금"],
-      correct: "마이너스 통장"
+      question: "📦 예나:\n \"웹 페이지에 이미지를 넣을 때 쓰는 HTML 태그는?\"",
+      choices: ["<img>", "<p>", "<a>", "<div>"],
+      correct: "<img>"
     },
     {
       id: 5,
-      category: "저축",
+      category: "HTML/CSS",
       difficulty: "보통",
-      question: "💡 연우: \"세금을 줄이면서 저축할 수 있는 방법이 있다던데?\"\n👉 어떤 절세형 상품일까?",
-      choices: ["소득세", "부가가치세", "취득세", "재산세"],
-      correct: "소득세"
+      question: "💡 도현:\n \"CSS에서 요소를 화면에 표시하지 않게 숨기는 속성은?\"\n👉 어떤 속성일까?",
+      choices: ["visibility: hidden;", "display: none;", "opacity: 0;", "position: absolute;"],
+      correct: "display: none;"
     },
 
-    // 투자 카테고리
+    // JavaScript 카테고리
     {
       id: 6,
-      category: "투자",
+      category: "JavaScript",
       difficulty: "쉬움",
-      question: "📘 진우: \"ETF? 그게 뭘 줄인 거야?\"\n👉 올바른 뜻은?",
-      choices: ["Exchange Traded Fund", "Equity Transfer Fund", "Economy Trade Fund", "Exchange Trade Finance"],
-      correct: "Exchange Traded Fund"
+      question: "📘 유진:\n \"웹 페이지에서 버튼 누르면 '뿅!' 하고 움직이는 효과 같은 거 만들 때 쓰는 언어는?\"\n👉 어떤 언어일까?",
+      choices: ["HTML", "CSS", "JavaScript", "PHP"],
+      correct: "JavaScript"
     },
     {
       id: 7,
-      category: "투자",
+      category: "JavaScript",
       difficulty: "보통",
-      question: "📈 수아: \"주식 시장에서 대표 지수를 뭐라고 해?\"\n👉 정답은?",
-      choices: ["KOSPI", "CPI", "CD", "ETF"],
-      correct: "KOSPI"
+      question: "📈 태준:\n \"JavaScript에서 변수를 선언할 때 쓰는 키워드가 아닌 것은?\"\n👉 틀린 것은?",
+      choices: ["var", "let", "const", "int"],
+      correct: "int"
     },
     {
       id: 8,
-      category: "투자",
+      category: "JavaScript",
       difficulty: "어려움",
-      question: "📊 하민: \"여러 곳에 투자하면 뭐가 좋지?\"\n👉 분산 투자의 핵심 목적은?",
-      choices: ["수익률 증가", "위험 감소", "거래 비용 절감", "세금 우대 혜택"],
-      correct: "위험 감소"
+      question: "📊 하은:\n \"JavaScript에서 웹 문서의 요소를 선택하고 조작할 때 사용하는 표준 객체 모델은?\"\n👉 무엇일까?",
+      choices: ["BOM", "DOM", "JSON", "AJAX"],
+      correct: "DOM"
     },
     {
       id: 9,
-      category: "투자",
+      category: "JavaScript",
       difficulty: "쉬움",
-      question: "🎯 해린: \"특정 가격에 거래할 수 있는 권리가 있다던데?\"\n👉 어떤 금융 상품일까?",
-      choices: ["옵션", "선물", "스왑", "주식"],
-      correct: "옵션"
+      question: "🎯 건우:\n \"JavaScript에서 어떤 동작을 수행하는 코드의 묶음을 뭐라고 해?\"\n👉 정답은?",
+      choices: ["변수", "함수", "배열", "객체"],
+      correct: "함수"
     },
     {
       id: 10,
-      category: "투자",
+      category: "JavaScript",
       difficulty: "보통",
-      question: "🧑‍💼 태민: \"펀드 매니저가 열심히 관리해주는 펀드는 뭐지?\"\n👉 해당 유형은?",
-      choices: ["액티브 펀드", "패시브 펀드", "ETF", "리츠(REITs)"],
-      correct: "액티브 펀드"
+      question: "🧑‍💼 지우:\n \"JavaScript에서 조건에 따라 다른 코드를 실행하고 싶을 때 쓰는 문법은?\"\n👉 어떤 문법일까?",
+      choices: ["for", "while", "if", "function"],
+      correct: "if"
     },
 
-    // 대출 카테고리
+    // 웹 표준/접근성 카테고리
     {
       id: 11,
-      category: "대출",
+      category: "웹 표준/접근성",
       difficulty: "쉬움",
-      question: "📆 도윤: \"매달 같은 금액을 내고 있어. 이게 무슨 방식이야?\"",
-      choices: ["원리금 균등 상환", "원금 균등 상환", "만기 일시 상환", "변동 상환"],
-      correct: "원리금 균등 상환"
+      question: "📆 민서:\n \"모든 사람이 웹사이트를 똑같이 잘 이용할 수 있게 만드는 걸 뭐라고 해?\"\n👉 정답은?",
+      choices: ["웹 표준", "웹 접근성", "웹 보안", "웹 디자인"],
+      correct: "웹 접근성"
     },
     {
       id: 12,
-      category: "대출",
+      category: "웹 표준/접근성",
       difficulty: "보통",
-      question: "🏠 해나: \"집 살 때 대출 한도는 뭘 보고 정하지?\"",
-      choices: ["DSR", "LTV", "DTI", "금리"],
-      correct: "LTV"
+      question: "🏠 준서:\n \"W3C에서 정한 웹 기술 표준을 지키는 걸 뭐라고 해?\"",
+      choices: ["웹 접근성", "웹 호환성", "웹 표준", "웹 사용성"],
+      correct: "웹 표준"
     },
     {
       id: 13,
-      category: "대출",
+      category: "웹 표준/접근성",
       difficulty: "어려움",
-      question: "📉 지윤: \"요즘 대출 금리가 자꾸 바뀌어... 무슨 대출인 거야?\"",
-      choices: ["변동금리 대출", "고정금리 대출", "혼합금리 대출", "주택담보대출"],
-      correct: "변동금리 대출"
+      question: "📉 채원:\n \"이미지에 대한 설명을 제공하여 시각 장애인이 이해할 수 있도록 돕는 HTML 속성은?\"\n👉 어떤 속성일까?",
+      choices: ["src", "href", "alt", "title"],
+      correct: "alt"
     },
     {
       id: 14,
-      category: "대출",
+      category: "웹 표준/접근성",
       difficulty: "쉬움",
-      question: "💳 소윤: \"필요할 때 조금씩 쓰는 대출은 뭐였지?\"",
-      choices: ["마이너스 통장 대출", "정기예금 대출", "모기지론", "주택담보대출"],
-      correct: "마이너스 통장 대출"
+      question: "💳 현서:\n \"웹 접근성을 높이기 위해 키보드만으로도 웹사이트를 이용할 수 있게 하는 건 어떤 원칙에 해당될까?\"",
+      choices: ["인식의 용이성", "운용의 용이성", "이해의 용이성", "견고성"],
+      correct: "운용의 용이성"
     },
     {
       id: 15,
-      category: "대출",
+      category: "웹 표준/접근성",
       difficulty: "보통",
-      question: "🔍 현우: \"DSR이 뭐야? 은행에서 자꾸 물어보던데?\"",
-      choices: ["대출자의 상환 능력", "부동산 가치", "금리 변동률", "은행 수익성"],
-      correct: "대출자의 상환 능력"
+      question: "🔍 우진:\n \"웹 표준을 지키면 어떤 점이 좋을까?\"\n👉 가장 거리가 먼 것은?",
+      choices: ["다양한 브라우저에서 잘 보임", "검색 엔진 최적화에 유리", "웹 접근성 향상", "웹사이트 디자인이 자동으로 예뻐짐"],
+      correct: "웹사이트 디자인이 자동으로 예뻐짐"
     },
 
-    // 보험 카테고리
+    // 웹 기획/디자인 카테고리
     {
       id: 16,
-      category: "보험",
+      category: "웹 기획/디자인",
       difficulty: "쉬움",
-      question: "🚗 태형: \"방금 사고 났는데 보험 되겠지?\"\n👉 어떤 보험일까?",
-      choices: ["자동차보험", "생명보험", "화재보험", "실손보험"],
-      correct: "자동차보험"
+      question: "🚗 수현:\n \"웹사이트 만들기 전에 어떤 내용을 넣을지, 어떻게 구성할지 정하는 단계를 뭐라고 해?\"\n👉 정답은?",
+      choices: ["코딩", "디자인", "기획", "테스트"],
+      correct: "기획"
     },
     {
       id: 17,
-      category: "보험",
+      category: "웹 기획/디자인",
       difficulty: "보통",
-      question: "⏳ 예진: \"보험료 못 내면 당장 효력이 없어지는 건 아니래. 그 기간이 뭐지?\"",
-      choices: ["유예기간", "면책기간", "납입기간", "보장기간"],
-      correct: "유예기간"
+      question: "⏳ 지훈:\n \"사용자가 웹사이트를 얼마나 쉽고 편리하게 사용할 수 있는지를 나타내는 말은?\"\n👉 무엇일까?",
+      choices: ["유용성", "심미성", "사용성", "기능성"],
+      correct: "사용성"
     },
     {
       id: 18,
-      category: "보험",
+      category: "웹 기획/디자인",
       difficulty: "어려움",
-      question: "🏥 아라: \"아플 때 치료비를 받을 수 있는 보험이 있대. 이름이 뭐야?\"",
-      choices: ["실손보험", "연금보험", "화재보험", "자동차보험"],
-      correct: "실손보험"
+      question: "🏥 아영:\n \"웹사이트 디자인할 때, 화면 크기에 따라 레이아웃이 자동으로 바뀌는 디자인 기법은?\"\n👉 어떤 기법일까?",
+      choices: ["고정형 디자인", "반응형 디자인", "적응형 디자인", "플랫 디자인"],
+      correct: "반응형 디자인"
     },
     {
       id: 19,
-      category: "보험",
+      category: "웹 기획/디자인",
       difficulty: "쉬움",
-      question: "🕊️ 은우: \"사망하면 유가족에게 돈이 나오는 보험 있잖아?\"\n👉 그 이름은?",
-      choices: ["생명보험", "화재보험", "실손보험", "연금보험"],
-      correct: "생명보험"
+      question: "🕊️ 승우:\n \"웹사이트의 전체적인 구조와 페이지 간 이동 경로를 그림으로 나타낸 것은?\"\n👉 무엇일까?",
+      choices: ["와이어프레임", "스토리보드", "사이트맵", "프로토타입"],
+      correct: "사이트맵"
     },
     {
       id: 20,
-      category: "보험",
+      category: "웹 기획/디자인",
       difficulty: "보통",
-      question: "📑 재현: \"보험료는 왜 사람마다 금액이 다르지?\"\n👉 이유는?",
-      choices: ["연령", "건강 상태", "보장 금액", "모두 해당"],
+      question: "📑 서준:\n \"웹 디자인의 기본 요소 중 하나로, 시각적인 안정감과 통일성을 주는 것은?\"\n👉 무엇일까?",
+      choices: ["레이아웃", "컬러", "타이포그래피", "모두 해당"],
       correct: "모두 해당"
+    },
+
+     // 서버/네트워크 카테고리
+    {
+      id: 21,
+      category: "서버/네트워크",
+      difficulty: "쉬움",
+      question: "🌐 민지:\n \"웹사이트 주소창에 입력하는 www.example.com 같은 걸 뭐라고 해?\"\n👉 정답은?",
+      choices: ["IP 주소", "도메인 이름", "URL", "서버 이름"],
+      correct: "도메인 이름"
+    },
+    {
+      id: 22,
+      category: "서버/네트워크",
+      difficulty: "보통",
+      question: "💻 현수:\n \"웹 페이지 파일들이 저장되어 있고, 사용자가 요청하면 보내주는 컴퓨터는?\"\n👉 무엇일까?",
+      choices: ["클라이언트", "서버", "라우터", "모뎀"],
+      correct: "서버"
+    },
+    {
+      id: 23,
+      category: "서버/네트워크",
+      difficulty: "어려움",
+      question: "🔒 지호:\n \"웹사이트 주소 앞에 'https'가 붙어있으면 뭐가 좋은 거야?\"\n👉 가장 큰 장점은?",
+      choices: ["웹사이트 속도가 빨라짐", "검색 순위가 높아짐", "데이터가 암호화되어 안전함", "디자인이 예뻐짐"],
+      correct: "데이터가 암호화되어 안전함"
+    },
+    {
+      id: 24,
+      category: "서버/네트워크",
+      difficulty: "쉬움",
+      question: "📡 유나:\n \"인터넷에서 정보를 주고받을 때 지켜야 하는 약속 같은 걸 뭐라고 해?\"\n👉 정답은?",
+      choices: ["프로그램", "데이터", "프로토콜", "알고리즘"],
+      correct: "프로토콜"
+    },
+    {
+      id: 25,
+      category: "서버/네트워크",
+      difficulty: "보통",
+      question: "📊 재민:\n \"웹 브라우저가 웹 서버에게 웹 페이지를 달라고 요청할 때 사용하는 프로토콜은?\"\n👉 무엇일까?",
+      choices: ["FTP", "SMTP", "HTTP", "SSH"],
+      correct: "HTTP"
     }
   ]
 };
 
 export default quizData;
+
